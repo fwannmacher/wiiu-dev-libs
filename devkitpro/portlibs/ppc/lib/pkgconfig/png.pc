@@ -1,0 +1,13 @@
+prefix=${DEVKITPRO}/portlibs/ppc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include
+
+Name: png
+Description: png library
+Version: 1.5.9
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
